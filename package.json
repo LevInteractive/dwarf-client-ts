@@ -1,0 +1,23 @@
+{
+  "name": "dwarf-client-javascript",
+  "version": "1.0.0",
+  "description": "Javascript client for dwarf shortener site",
+  "main": "index.js",
+  "keywords": [
+    "url",
+    "shortener",
+    "dwarf",
+    "javascript",
+    "node"
+  ],
+  "author": {
+    "name": "Rafael Goulart",
+    "email": "rafaelgou@pm.me",
+    "url": "https://tech.rgou.net"
+  },
+  "homepage": "https://github.com/LevInteractive/dwarf-client-javascript",
+  "license": "Apache",
+  "dependencies": {
+    "request-promise-native": "^1.0.5"
+  }
+}
