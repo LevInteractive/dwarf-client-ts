@@ -4,7 +4,6 @@ import { loadSync } from "@grpc/proto-loader";
 
 const GRPC_SERVER = process.env.DWARF_GRPC_SERVER;
 const PROTO_PATH = __dirname + "./../dwarf.proto";
-
 const dwarfProto = grpc.loadPackageDefinition(loadSync(PROTO_PATH)).pb;
 
 if (!GRPC_SERVER) {
@@ -25,9 +24,9 @@ export function shorten(urls: string[]) {
 
     client.Create({ urls }, (err: Error, res: ServerResponse) => {
       if (err) {
-        resolve(res);
+        resolve(err);
       } else {
-        reject(err);
+        reject(res);
       }
     });
   });
