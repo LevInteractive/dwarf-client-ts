@@ -1,23 +1,18 @@
 {
-  "name": "dwarf-client-javascript",
-  "version": "1.0.0",
-  "description": "Javascript client for dwarf shortener site",
+  "name": "dwarf-node-client",
+  "version": "2.0.0",
+  "description": "gRPC Dwarf node client.",
   "main": "index.js",
-  "keywords": [
-    "url",
-    "shortener",
-    "dwarf",
-    "javascript",
-    "node"
-  ],
-  "author": {
-    "name": "Rafael Goulart",
-    "email": "rafaelgou@pm.me",
-    "url": "https://tech.rgou.net"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/LevInteractive/dwarf-client-javascript",
-  "license": "Apache",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "request-promise-native": "^1.0.5"
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.3"
   }
 }
