@@ -1,8 +1,8 @@
 {
-  "name": "dwarf-node-client",
-  "version": "2.0.0",
+  "name": "@LevInteractive/dwarf-client",
+  "version": "1.0.1",
   "description": "gRPC Dwarf node client.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
