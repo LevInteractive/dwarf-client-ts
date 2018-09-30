@@ -24,9 +24,9 @@ export function shorten(urls: string[]) {
 
     client.Create({ urls }, (err: Error, res: ServerResponse) => {
       if (err) {
-        resolve(err);
+        reject(err);
       } else {
-        reject(res);
+        resolve(res);
       }
     });
   });
