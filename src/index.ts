@@ -7,8 +7,7 @@ const PROTO_PATH = __dirname + "./../dwarf.proto";
 let dwarfProto: grpc.GrpcObject;
 
 if (!GRPC_SERVER) {
-  console.error("You must set a GRPC server.");
-  process.exit(1);
+  console.warn("You must set a GRPC server. Dwarf will not work.");
 }
 
 export interface ServerResponse {
